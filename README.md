@@ -1,33 +1,31 @@
-### App for summarize the meet
+# MeetMind AI
 
-meetmind
+AI-powered meeting intelligence system built with Frappe Framework.
 
-### Installation
+## Features
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+- Audio & video upload
+- Whisper AI transcription
+- AI-generated meeting summaries
+- Background job processing
+- Realtime status updates
+- Local LLM integration with Ollama
+
+## Tech Stack
+
+- Frappe Framework
+- Python
+- Redis Queue
+- FFmpeg
+- Whisper
+- Ollama
+- Phi3
+
+## Installation
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
+
+bench get-app $REPO_URL
+
 bench install-app meetmind_ai
-```
-
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/meetmind_ai
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### License
-
-mit
